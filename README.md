@@ -37,6 +37,16 @@ Example Screenshots are below
 ![Usage Example](examples/square.png)
 > **Note**: This is an example logo
 
+## Tests
+
+To run tests on this project, follow these steps:
+
+1. Clone this repository to your device from Github
+2. Follow the installation instructions above
+3. Run Jest by running `npm run test` in your terminal
+
+![Test Example](images/test.PNG)
+
 ## Credits
 https://github.com/Destroer47
 
