@@ -19,7 +19,8 @@ const colors = [
     'navy',
     'blue',
     'teal',
-    'aqua'
+    'aqua',
+    'brown'
 ]
 const regex = /^#[0-9A-Fa-f]{6}/g;
 
@@ -36,7 +37,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Input a color fot the text, either a basic color name, or in hexidecimal format, ex #FFA500',
+        message: 'Input a color for the text, either a basic color name, or in hexidecimal format, ex #FFA500',
         name: 'color',
         validate: (input) => {
             if (!input) {return 'Please enter a color'}
@@ -55,7 +56,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Input a color fot the shape, either a basic color name, or in hexidecimal format, ex #FFA500',
+        message: 'Input a color for the shape, either a basic color name, or in hexidecimal format, ex #FFA500',
         name: 'shapeColor',
         validate: (input) => {
             if (!input) {return 'Please enter a color'}
@@ -83,7 +84,6 @@ function init() {
     inquirer.prompt(questions)
         .then((data) => {
             const input = data
-            console.log(input)
             const newLogo = new Shapes(
                 input.text,
                 input.color,
